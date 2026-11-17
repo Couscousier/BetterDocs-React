@@ -1,0 +1,31 @@
+{
+  "name": "twitch-ai-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bot Twitch IA : clips autonomes, planning, rediffusions, modération des insultes et discussion avec le chat (Claude).",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "auth": "tsx scripts/auth.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
+    "dotenv": "^18.0.10",
+    "tmi.js": "^1.8.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/tmi.js": "^1.8.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
